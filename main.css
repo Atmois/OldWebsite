@@ -1,0 +1,223 @@
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 15pt;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    transition: color 0.25s ease;
+}
+
+#main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    transition: opacity 1s ease 0s, transform 1s ease 0s;
+}
+
+#main>.inner {
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    position: relative;
+    width: 35rem;
+    z-index: 1;
+    padding: 0rem 3rem;
+}
+
+#mainText {
+    color: #B0B8D4;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.025rem;
+    font-size: 1em;
+    line-height: 1.75;
+    font-weight: 400;
+    text-align: center;
+}
+
+#mainText a {
+    text-decoration: underline;
+}
+
+#mainText a:hover {
+    text-decoration: none;
+}
+
+#mainText span.p:nth-child(n + 2) {
+    margin-top: 1rem;
+}
+
+
+#pageHeaderText {
+    color: #B3D1FF;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.2rem;
+    font-size: 4em;
+    line-height: 1.125;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #B5A9D6 0%, #B3D1FF 58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#pageHeaderText a {
+    text-decoration: underline;
+}
+
+#pageHeaderText a:hover {
+    text-decoration: none;
+}
+
+#pageHeaderText span.p:nth-child(n + 2) {
+    margin-top: 1rem;
+    -webkit-text-fill-color: currentcolor;
+}
+
+#pageHeaderText span.p {
+    background-image: linear-gradient(45deg, #B5A9D6 0%, #B3D1FF 58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+}
+
+#subHeaderText {
+    color: #B3D1FF;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.125rem;
+    font-size: 2em;
+    line-height: 1.125;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #B5A9D6 0%, #B3D1FF 58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#subHeaderText a {
+    text-decoration: underline;
+}
+
+#subHeaderText a:hover {
+    text-decoration: none;
+}
+
+#subHeaderText span.p:nth-child(n + 2) {
+    margin-top: 1rem;
+    -webkit-text-fill-color: currentcolor;
+}
+
+#subHeaderText span.p {
+    background-image: linear-gradient(45deg, #B5A9D6 0%, #B3D1FF 58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.buttons {
+    cursor: default;
+    display: flex;
+}
+
+.buttons li a {
+    text-decoration: none;
+}
+
+#mainButton {
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#mainButton li a {
+    display: inline-flex;
+    line-height: 1.625rem;
+    padding: 0 1.1875rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.1rem;
+    padding-left: calc(0.1rem + 1.1875rem);
+    font-size: 1.125em;
+    font-weight: 600;
+    border-radius: 0.875rem;
+    box-shadow: -0rem -0rem 0.75rem 0.125rem #49757A;
+    flex-direction: row-reverse;
+    padding-bottom: 0.7421875rem;
+    padding-top: 0.7421875rem;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#mainButton li a svg {
+    fill: rgba(8, 9, 13, 0.702);
+    height: 1.625rem;
+    width: 1.5em;
+}
+
+#mainButton .button {
+    background-color: #ABC7FF;
+    color: rgba(8, 9, 13, 0.702);
+    background-image: linear-gradient(163deg, #D0ABFF 9%, rgba(171, 199, 255, 0.008) 72%);
+}
+
+#mainButton li a:hover {
+    transform: scale(1.0425);
+}
+
+#mainContainer {
+    background-color: #151414;
+    border-radius: 2rem;
+    border: 3px solid #D0ABFF;
+}
+
+#mainContainer:not(:first-child) {
+    margin-top: 3rem !important;
+}
+
+#mainContainer:not(:last-child) {
+    margin-bottom: 3rem !important;
+}
+
+#mainContainer>.wrapper>.inner {
+    --gutters: 4rem;
+    --padding-horizontal: 2rem;
+    --padding-vertical: 2rem;
+    --spacing: 1.5rem;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+}
+
+#mainContainer.default>.wrapper>.inner>* {
+    margin-bottom: var(--spacing);
+    margin-top: var(--spacing);
+}
+
+#mainContainer.default>.wrapper>.inner>*:first-child {
+    margin-top: 0 !important;
+}
+
+#mainContainer.default>.wrapper>.inner>*:last-child {
+    margin-bottom: 0 !important;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navBox {
+    display: block;
+    margin: auto;
+    border: 3px solid #D0ABFF;
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+    padding: 0;
+}
